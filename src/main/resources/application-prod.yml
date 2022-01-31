@@ -1,0 +1,19 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://${mongo-user}:${mongo-password}@${mongo-user}.5nvhv.mongodb.net
+      database: ${mongo-db}
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${user-name}
+    password: ${password}
+    destination-mail: ${destination-mail}
+    from-mail: ${from-mail}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
